@@ -1,5 +1,5 @@
 import { TTrendingAsset } from "../types";
-import cardBackground from "../assets/card-bg.svg";
+import cardBackground from "../assets/card-bg.png";
 interface CardProps {
   card: TTrendingAsset;
 }
@@ -22,7 +22,7 @@ const formatAmount = (
 
 export default function Card({ card }: CardProps) {
   return (
-    <div className="flex flex-col w-72 m-4 my-8">
+    <div className="flex flex-col w-72 mx-2 md:mx-4 my-8">
       <div
         className={`border-box w-fit p-5 bg-gradient-to-b from-gray to-${card.shortName.toLowerCase()} 
  mx-auto border-2 rounded-full border-gray2 h-full`}
@@ -36,9 +36,9 @@ export default function Card({ card }: CardProps) {
       </div>
       <img
         src={cardBackground}
-        className="w-full h-auto -mt-12"
+        className="w-72 h-auto -mt-12"
         draggable={false}
-        alt="card-bg"
+        alt="card-background"
       ></img>
       <div className="flex flex-col  -mt-72 px-8">
         <p className="text-center font-tomorrow text-white2 text-xs mt-2">

@@ -5,7 +5,7 @@ import Card from "./Card.component";
 // Header Component
 export const Header = function () {
   return (
-    <div className="flex flex-row items-center justify-start w-full my-4">
+    <div className="flex flex-row items-center justify-center md:justify-start w-full my-4">
       <img src={ACTIVITY_IMAGE} className="w-4 h-4" alt="activity-logo" />
       <p className="text-white font-tomorrow text-base mx-2 opacity-90">
         Trending Assets
